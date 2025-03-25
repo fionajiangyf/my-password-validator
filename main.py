@@ -35,4 +35,4 @@ def check_password():
     if not any(c in "!@#$%^&*" for c in pw):
         return flask.jsonify({"valid": False, "reason": "Password must contain at least one special character (!@#$%^&*)."}), 200
 
-    return flask.jsonify({"valid": True, "reason": ""}), 200
+    return flask.jsonify({"valid": True, "reason": "Valid Password"}), 200
